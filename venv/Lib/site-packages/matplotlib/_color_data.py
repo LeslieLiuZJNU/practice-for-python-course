@@ -1,4 +1,7 @@
+from __future__ import (absolute_import, division, print_function,
+                        unicode_literals)
 from collections import OrderedDict
+import six
 
 
 BASE_COLORS = {
@@ -31,7 +34,7 @@ TABLEAU_COLORS = OrderedDict(
     ('tab:' + name, value) for name, value in TABLEAU_COLORS)
 
 # This mapping of color names -> hex values is taken from
-# a survey run by Randall Munroe see:
+# a survey run by Randel Monroe see:
 # http://blog.xkcd.com/2010/05/03/color-survey-results/
 # for more details.  The results are hosted at
 # https://xkcd.com/color/rgb.txt
